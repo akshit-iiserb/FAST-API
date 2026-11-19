@@ -160,6 +160,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "fastapi" },
+    { name = "ipykernel" },
 ]
 
 [package.dev-dependencies]
@@ -168,7 +169,10 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "fastapi", specifier = ">=0.162.0" }]
+requires-dist = [
+    { name = "fastapi", specifier = ">=0.162.0" },
+    { name = "ipykernel", specifier = ">=7.4.0" },
+]
 
 [package.metadata.requires-dev]
 dev = [{ name = "ipykernel", specifier = ">=7.4.0" }]
